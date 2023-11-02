@@ -191,3 +191,39 @@ section form input {
 footer p {
     margin: 0;
 }
+
+.carousel-inner {
+    height: 500px;
+}
+
+.item {
+    height: 300px;
+    border: solid 3px rgb(47, 170, 129);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item1 {
+    background-image: url(../images/galeria1.jpg);
+}
+
+.item2 {
+    background-image: url(../images/galeria2.jpg);
+}
+
+.item3 {
+    background-image: url(../images/galeria3.jpg);
+}
+
+.item4 {
+    background-image: url(../images/galeria4.jpg);
+}
+
+.item5 {
+    background-image: url(../images/galeria5.jpg);
+}
+
+.item6 {
+    background-image: url(../images/galeria6.jpg);
+}
