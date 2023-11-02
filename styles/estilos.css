@@ -6,6 +6,10 @@
     background-color: rosybrown;
 }
 
+.navbar-brand {
+    font-size: 26px;
+}
+
 .navbar-toggler:focus {
     box-shadow: none;
 }
@@ -46,6 +50,9 @@ main {
 h1 {
     color:rosybrown;
     margin-left: 15px;
+    border-bottom: solid 2px;
+    border-bottom-color: rgb(47, 170, 129);
+    padding-bottom: 10px;
 }
 
 ul {
