@@ -1,0 +1,199 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: rosybrown;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.nav-item{
+    text-align: left;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+/* header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+header div {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(47, 125, 99);
+    background-color: rgba(238, 221, 201, 0.563);
+    border-radius: 7px;
+} */
+
+nav div {
+    text-align: center;
+    font-size: 14px;
+}
+
+main {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h1 {
+    color:rosybrown;
+    margin-left: 15px;
+}
+
+ul {
+    list-style-type: none;
+    float: left;
+    padding: 0;
+   
+}
+
+li {
+    float: left;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rosybrown;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+section {
+    margin: 15px;
+}
+
+section p {
+    font-size: 15px;
+    line-height: 20px;
+    font-family: sans-serif;
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .row p {
+        font-size: 12px;
+    }
+
+    .pHome {
+        font-size: 12px;
+    }
+
+    .formInput {
+        width: 60%;   
+        font-size: 12px !important;
+        text-align: center;
+    }
+
+    .btn {
+        background-color: rosybrown;
+        color: white;
+        font-size: 12px !important;
+        padding: 8px 20px;
+    }
+
+    .btn:hover {
+        cursor: pointer;
+        color: white;
+        font-size: 13px;
+        transition: all 0.5s;
+    }
+
+    .form-label {
+        font-size: 12px !important;
+    }
+
+}
+
+.row {
+    justify-content: center;
+}
+
+.row p {
+    text-align: justify;
+    padding-left: 0;
+}
+
+.pHome {
+    width: 100%;
+    text-align: justify;
+}
+
+section div {
+    text-align: center;
+}
+
+hr {
+    border-color: rgba(169, 140, 101, 0.603);
+}
+
+.formulario {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+    border: solid 2px rgba(169, 140, 101, 0.603);
+    border-radius: 10px;
+    background-color: rgba(169, 140, 101, 0.442);
+}
+
+.formInput {
+    width: 40%;   
+    font-size: 14px;
+    text-align: left;
+}
+
+.form-label {
+    font-size: 14px;
+}
+
+.btn {
+    background-color: rosybrown;
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+footer{
+    text-align: center;
+    font-size: 14px;
+    background-color: rgba(169, 140, 101, 0.603);
+    padding: 10px;
+}
+
+section form {
+    text-align: center;
+}
+
+section form input {
+    margin-top: 6px;
+}
+
+footer p {
+    margin: 0;
+}
