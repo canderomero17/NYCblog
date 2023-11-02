@@ -24,19 +24,6 @@
     transition: all 0.5s;
 }
 
-/* header {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-header div {
-    text-align: center;
-    font-size: 50px;
-    color: rgb(47, 125, 99);
-    background-color: rgba(238, 221, 201, 0.563);
-    border-radius: 7px;
-} */
-
 nav div {
     text-align: center;
     font-size: 14px;
