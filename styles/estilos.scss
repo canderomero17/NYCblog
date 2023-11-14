@@ -1,0 +1,159 @@
+//paleta de colores
+$colorPrincipal: rosybrown;
+$colorSecundario: rgba(169, 140, 101, 0.603);
+$colorTerciario: rgb(47, 170, 129);
+
+header {
+    
+    nav {
+        background-color: $colorPrincipal;
+
+        div {
+            text-align: center;
+            font-size: 14px;
+
+            .navbar-brand {
+                font-size: 26px;
+            }
+
+            .navbar-toggler:focus {
+                box-shadow: none;                
+            }
+
+            div {
+
+                ul {
+
+                    li {
+                        text-align: left;
+
+                        &:hover { 
+                            font-size: 16px;
+                            transition: all 0.5s;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+        }
+        } 
+}
+
+
+main {
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+        h1 {
+            color:$colorPrincipal;
+            margin-left: 15px;
+            border-bottom: solid 2px;
+            border-bottom-color: $colorTerciario;
+            padding-bottom: 10px;
+        }
+
+        section {
+            margin: 15px;
+                article {
+                    h2{
+                        text-decoration: underline;
+                    }
+
+                    .pHome {
+                        width: 100%;
+                        text-align: justify;
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+
+                    .parrafo {
+                        text-align: justify;
+                        padding-left: 0;
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+
+                    div {
+
+                        div {
+                            justify-content: center;
+                            
+                            .item {
+                                height: 300px;
+                                border: solid 3px $colorTerciario;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                            }
+
+                            @for $i from 1 through 6 {
+                                .item#{$i} {
+                                    background-image: url(/images/galeria#{$i}.jpg);
+                                }
+                            }
+                        }
+                    }
+                }
+        }
+            
+        form {
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 14px;
+            margin-top: 15px;
+            text-align: center;
+            border: solid 2px $colorSecundario;
+            border-radius: 10px;
+            background-color: rgba(169, 140, 101, 0.442);
+
+                div{
+                    label{
+                        font-size: 14px;
+                    }
+
+                    input{
+                        width: 40%;   
+                        font-size: 14px;
+                        text-align: left;
+                    }
+                }
+
+                .btn {
+                    background-color: $colorPrincipal;
+                    color: white;
+                    font-size: 14px;
+                    padding: 8px 20px;
+
+                    &:hover {
+                        color: white;
+                        font-size: 15px;
+                        transition: all 0.5s;
+                        cursor: pointer;
+                    }
+                }
+        }
+}
+    
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    background-color: rgba(169, 140, 101, 0.603);
+    padding: 10px;
+
+    p {
+        margin: 0;
+    }
+
+    div {
+        a {
+            text-decoration: none;
+            color: black;
+            
+            &:hover {
+                color: $colorPrincipal;
+            }
+        }
+    }
+}
