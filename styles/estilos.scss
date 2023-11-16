@@ -4,7 +4,7 @@ $colorSecundario: rgba(169, 140, 101, 0.603);
 $colorTerciario: rgb(47, 170, 129);
 
 .background {
-    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.9), rgba(255,255,255,0.8)), url("../images/background.jpg") !important;
+    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.9), rgba(255,255,255,0.8)), url(../images/background.jpg) !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -114,7 +114,7 @@ main {
 
                             @for $i from 1 through 6 {
                                 .item#{$i} {
-                                    background-image: url(../images/galeria#{$i}.jpg);
+                                    background-image: url(../images/galeria#{$i}.jpg) !important;
                                 }
                             }
                         }
