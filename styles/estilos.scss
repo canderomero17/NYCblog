@@ -114,7 +114,7 @@ main {
 
                             @for $i from 1 through 6 {
                                 .item#{$i} {
-                                    background-image: url("../images/galeria#{$i}.jpg") !important;
+                                    background-image: url(../images/galeria#{$i}.jpg) !important;
                                 }
                             }
                         }
