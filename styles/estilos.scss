@@ -3,6 +3,13 @@ $colorPrincipal: rosybrown;
 $colorSecundario: rgba(169, 140, 101, 0.603);
 $colorTerciario: rgb(47, 170, 129);
 
+.background {
+    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.9), rgba(255,255,255,0.8)), url(/images/background.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 header {
     
     nav {
@@ -32,7 +39,19 @@ header {
                             transition: all 0.5s;
                             cursor: pointer;
                         }
+
+                        .nav-link {
+                            padding-left: 10px !important
+                        }
                     }
+
+                    @media (max-width: 767px) {
+                        @for $i from 1 through 5 {
+                            .degradado#{$i} {
+                                background-color: lighten($colorPrincipal, $i * 3%) !important;
+                            }
+                        }
+                    } 
                 }
             }
 
@@ -58,6 +77,12 @@ main {
                 article {
                     h2{
                         text-decoration: underline;
+                    }
+
+                    @media (max-width: 576px) {
+                        h2 {
+                            font-size: 20px;
+                        }
                     }
 
                     .pHome {
@@ -117,6 +142,19 @@ main {
                         font-size: 14px;
                         text-align: left;
                     }
+
+                    @media (max-width: 576px) {
+
+                        label {
+                            font-size: 12px !important;  
+                        }
+
+                        input {
+                            width: 60%;   
+                            font-size: 12px !important;
+                            text-align: center;
+                        }
+                    }
                 }
 
                 .btn {
@@ -130,6 +168,17 @@ main {
                         font-size: 15px;
                         transition: all 0.5s;
                         cursor: pointer;
+                    }
+                }
+
+                @media (max-width: 576px) {
+                    .btn {
+                        font-size: 12px !important;
+                    
+                        &:hover {                       
+                            font-size: 13px !important;
+                            transition: all 0.5s;
+                        }
                     }
                 }
         }

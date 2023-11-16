@@ -1,3 +1,10 @@
+.background {
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url(/images/background.jpg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 header nav {
   background-color: rosybrown;
 }
@@ -19,6 +26,26 @@ header nav div div ul li:hover {
   transition: all 0.5s;
   cursor: pointer;
 }
+header nav div div ul li .nav-link {
+  padding-left: 10px !important;
+}
+@media (max-width: 767px) {
+  header nav div div ul .degradado1 {
+    background-color: #c29999 !important;
+  }
+  header nav div div ul .degradado2 {
+    background-color: #c7a2a2 !important;
+  }
+  header nav div div ul .degradado3 {
+    background-color: #cdacac !important;
+  }
+  header nav div div ul .degradado4 {
+    background-color: #d3b5b5 !important;
+  }
+  header nav div div ul .degradado5 {
+    background-color: #d9bfbf !important;
+  }
+}
 
 main {
   margin-bottom: 20px;
@@ -36,6 +63,11 @@ main section {
 }
 main section article h2 {
   text-decoration: underline;
+}
+@media (max-width: 576px) {
+  main section article h2 {
+    font-size: 20px;
+  }
 }
 main section article .pHome {
   width: 100%;
@@ -95,6 +127,16 @@ main form div input {
   font-size: 14px;
   text-align: left;
 }
+@media (max-width: 576px) {
+  main form div label {
+    font-size: 12px !important;
+  }
+  main form div input {
+    width: 60%;
+    font-size: 12px !important;
+    text-align: center;
+  }
+}
 main form .btn {
   background-color: rosybrown;
   color: white;
@@ -106,6 +148,15 @@ main form .btn:hover {
   font-size: 15px;
   transition: all 0.5s;
   cursor: pointer;
+}
+@media (max-width: 576px) {
+  main form .btn {
+    font-size: 12px !important;
+  }
+  main form .btn:hover {
+    font-size: 13px !important;
+    transition: all 0.5s;
+  }
 }
 
 footer {
@@ -123,6 +174,4 @@ footer div a {
 }
 footer div a:hover {
   color: rosybrown;
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
