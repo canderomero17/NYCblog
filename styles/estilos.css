@@ -59,10 +59,50 @@ main h1 {
   padding-bottom: 10px;
 }
 main section {
-  margin: 15px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+main section article .banner {
+  height: 400px;
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-position: top;
+  margin-bottom: 30px;
+}
+@media (max-width: 576px) {
+  main section article .banner {
+    height: 200px;
+  }
+}
+@media (max-width: 767px) {
+  main section article .banner {
+    height: 300px;
+  }
 }
 main section article h2 {
   text-decoration: underline;
+}
+main section article .bienvenidos {
+  text-align: center;
+  text-decoration: none;
+  padding-top: 10px;
+  color: rgb(47, 170, 129);
+  animation-duration: 1.5s;
+  animation-name: aparecer;
+  animation-delay: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  text-shadow: 2px 2px rgba(169, 140, 101, 0.603);
+}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @media (max-width: 576px) {
   main section article h2 {
@@ -74,6 +114,7 @@ main section article .pHome {
   text-align: justify;
   font-size: 15px;
   line-height: 20px;
+  margin-bottom: 30px;
 }
 main section article .parrafo {
   text-align: justify;
@@ -92,22 +133,22 @@ main section article div div .item {
   background-size: cover;
 }
 main section article div div .item1 {
-  background-image: url(../images/galeria1.jpg);
+  background-image: url(../images/galeria1.jpg) !important;
 }
 main section article div div .item2 {
-  background-image: url(../images/galeria2.jpg);
+  background-image: url(../images/galeria2.jpg) !important;
 }
 main section article div div .item3 {
-  background-image: url(../images/galeria3.jpg);
+  background-image: url(../images/galeria3.jpg) !important;
 }
 main section article div div .item4 {
-  background-image: url(../images/galeria4.jpg);
+  background-image: url(../images/galeria4.jpg) !important;
 }
 main section article div div .item5 {
-  background-image: url(../images/galeria5.jpg);
+  background-image: url(../images/galeria5.jpg) !important;
 }
 main section article div div .item6 {
-  background-image: url(../images/galeria6.jpg);
+  background-image: url(../images/galeria6.jpg) !important;
 }
 main form {
   margin-left: 15px;
